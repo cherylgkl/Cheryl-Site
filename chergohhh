@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>Chergoh's Website</h1>
+
+        <h2>Why I Picked Up Web Development</h2>
+        <p>I am interested in being able to see the fruits of my labour since I will have a tangible result after finishing this course, if I will ever be able to. Most importantly, I didn't want Algorithms.</p>
+
+        <h2>My Favourite Actor</h2>
+        <p>Leonardo DiCaprio, because he finally has an Oscar award and I admire his perseverance. And also, there's awesome memes of him. Words cannot describe the joy I feel from seeing memes of him.</p>
+        <img src="https://pbs.twimg.com/media/DZuZMiGVMAAP5y6.jpg">
+
+        <h2>Sites I Wished Weren't Blocked On School Wi-Fi</h2>
+        <a href="https://www.miniclip.com/games/en/">Miniclip</a><br>
+        <a href="http://www.nitrome.com/">Nitrome</a><br>
+        <a href="http://www.y8.com/">Y8</a><br>
+        <a href="http://store.steampowered.com/">Steam</a><br>
+        <p>And all other gaming websites.</p>
+    </body>
+</html>
