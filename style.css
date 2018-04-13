@@ -1,0 +1,60 @@
+h2{
+	background-color:#D5C8F3;
+	text-align: center;
+}
+
+h1{
+	background-color:#F3C8E0;
+	text-align: center;
+}
+
+#whywebdev{
+	background-color: #F3DEC8;
+}
+
+#favactor{
+	background-color: #E2F3C8;
+}
+
+a:link{
+	font-family: verdana;
+}
+
+a:hover {
+	color:orange;
+}
+
+a:visited{
+	color:#5A639F;
+}
+
+a.one:link{
+	color:#EE0D84;
+}
+
+a.two:link{
+	color:#A10D5B;
+}
+
+a.three:link{
+	color:#700A40;
+}
+
+a.four:link{
+	color:#460628;
+	font-style: italic;
+}
+
+img {
+	width:300px;
+	float:left;
+}
+
+body{
+	background-image:url("https://www.planwallpaper.com/static/images/Alien_Ink_2560X1600_Abstract_Background_1.jpg")
+}
+
+p.haha{
+	font-family: georgia;
+	font-size: 20px;
+}
