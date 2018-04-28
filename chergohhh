@@ -1,18 +1,57 @@
 <html>
 
     <head>    
-        <link rel = "stylesheet" href = "style.css" />
+        
+        <link rel="stylesheet" href="style.css"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $(".button").click(function(){
+                alert("WHAT ARE YOU DOING");
+            });
+        }); 
+
+        var _hash = window.location.hash;
+        if( _hash ){
+        var x = parseInt( window.location.hash.replace("#", ""));
+        x = x+1;
+        window.location.hash=x;
+        document.getElementById("count").innerHTML =
+        x.toString() 
+        }else{
+        window.location.hash = "1"
+        }
+
+        $(".text").load("http://wd.comsci.club/api/kv.php?key=chergoh")
+        
+        </script>
+    
     </head>
     
     <body>
+
+        <p id="count"></p> 
+        
         <h1>Chergoh's Website</h1>
+
+        <button class="button">Click Me!</button>
 
         <h2 id=whywebdev>Why I Picked Up Web Development</h2>
         <p class="haha">I am interested in being able to see the fruits of my labour since I will have a tangible result after finishing this course, if I will ever be able to. <s>Also, I didn't want Algorithms.</s></p>
 
         <h2 id=favactor>My Favourite Actor</h2>
         <img src="https://pbs.twimg.com/media/DZuZMiGVMAAP5y6.jpg">
-        <p class="haha"><b>Leonardo DiCaprio</b>, because he finally has an Oscar award and I admire his perseverance. And also, there's awesome memes of him. <br><i>Words cannot describe the joy I feel from seeing memes of him.</i><br><br><font size="5"><b>Some fantastic movies he acted in:</b></font><br>-The Great Gatsby<br>-Titanic<br>-The Wolf of Wall Street</p>
+        <p class="haha"><b>Leonardo DiCaprio</b>, because he finally has an Oscar award and I admire his perseverance. And also, there's awesome memes of him. 
+        <br>
+        <i>Words cannot describe the joy I feel from seeing memes of him.</i>
+        <br><br>
+        <font size="5"><b>Some fantastic movies he acted in:</b></font>
+        <br>
+        -The Great Gatsby
+        <br>
+        -Titanic
+        <br>-The Wolf of Wall Street</p>
 
         <br>
         
@@ -22,5 +61,7 @@
         <p><b><a class="three" href="http://www.y8.com/" target="_blank">Y8</a></b></p>
         <p><b><a class="four" href="http://store.steampowered.com/" target="_blank">Steam</a></b></p>
         <p class="haha">And all other gaming websites.</p>
+ 
     </body>
+
 </html>
