@@ -16,6 +16,10 @@ h1{
 	background-color: #E2F3C8;
 }
 
+#comm{
+	background-color: #E996F0;
+}
+
 a:link{
 	font-family: verdana;
 }
@@ -76,4 +80,29 @@ p.haha{
 
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#submit-comment{
+	background-color: #F0ED16;
+    border: none;
+    color: white;
+    padding: 0px 0px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor:pointer;
+    border-radius: 3px;
+}
+
+#submit-comment:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+div{
+	font-family: monospace;
+	font-size: 20px;
+}
+
+#comment-input{
+	display: inline-block;
 }

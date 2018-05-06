@@ -1,0 +1,75 @@
+<html>
+
+    <head>    
+        
+        <link rel="stylesheet" href="style.css"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".button").click(function(){
+                    alert("WHAT ARE YOU DOING");
+                });
+
+                $.get("http://wd.comsci.club/api/kv.php?key=chergoh", function(data) {
+                    $("#comment-box").html(data);
+                });
+        
+                $("#submit-comment").click(function(){
+                    var currentComments = $("#comment-box").html();
+                    var newComment = $("#comment-input").val();
+                    var allComments = currentComments + "<br>" + newComment;
+                    $.post("http://wd.comsci.club/api/kv.php?key=chergoh", {
+                        value: allComments
+                    });
+
+                    $("#comment-box").html( allComments );
+                    $("#comment-input").val("");
+                });
+            } );       
+
+        </script>
+    
+    </head>
+    
+    <body>
+        
+        <h1>Chergoh's Website</h1>
+
+        <button class="button">Click Me!</button>
+
+        <h2 id=whywebdev>Why I Picked Up Web Development</h2>
+        <p class="haha">I am interested in being able to see the fruits of my labour since I will have a tangible result after finishing this course, if I will ever be able to. <s>Also, I didn't want Algorithms.</s></p>
+
+        <h2 id=favactor>My Favourite Actor</h2>
+        <img src="https://pbs.twimg.com/media/DZuZMiGVMAAP5y6.jpg">
+        <p class="haha"><b>Leonardo DiCaprio</b>, because he finally has an Oscar award and I admire his perseverance. And also, there's awesome memes of him. 
+        <br>
+        <i>Words cannot describe the joy I feel from seeing memes of him.</i>
+        <br><br>
+        <font size="5"><b>Some fantastic movies he acted in:</b></font>
+        <br>
+        -The Great Gatsby
+        <br>
+        -Titanic
+        <br>-The Wolf of Wall Street</p>
+
+        <br>
+        
+        <h2>Sites I Wished Weren't Blocked On School Wi-Fi</h2>
+        <p><b><a class="one" href="https://www.miniclip.com/games/en/" target="_blank">Miniclip</a></b></p>
+        <p><b><a class="two" href="http://www.nitrome.com/" target="_blank">Nitrome</a></b></p>
+        <p><b><a class="three" href="http://www.y8.com/" target="_blank">Y8</a></b></p>
+        <p><b><a class="four" href="http://store.steampowered.com/" target="_blank">Steam</a></b></p>
+        <p class="haha">And all other gaming websites.</p>
+
+        <h2 id=comm>Comments!</h2>
+        <div id="comment-box">
+        </div>
+        <br>
+        Please leave a comment! <input type="text" id="comment-input">
+        <button id="submit-comment">Submit!</button>
+ 
+    </body>
+
+</html>
